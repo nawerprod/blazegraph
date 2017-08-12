@@ -1,0 +1,13 @@
+### Build
+
+```
+docker build -t 'nawer/blazegraph:%%BLAZEGRAPH_VERSION%%' .
+docker push nawer/blazegraph:%%BLAZEGRAPH_VERSION%%
+```
+
+### Usage
+
+```
+docker run --name blazegraph -d -p 9999:9999 nawer/blazegraph:%%BLAZEGRAPH_VERSION%%
+docker logs -f blazegraph
+```

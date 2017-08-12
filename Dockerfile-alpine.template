@@ -1,0 +1,16 @@
+# docker build -t nawer/blazegraph:%%BLAZEGRAPH_VERSION%% .
+FROM %%JDK_SUITE%%
+MAINTAINER Erwan Delahaye <erwan.delahaye@gmail.com>
+
+RUN apk add --no-cache bash
+# install blazegraph
+ADD %%BLAZEGRAPH_URL%% /usr/bin/blazegraph.jar
+
+RUN mkdir /docker-entrypoint-initdb.d
+
+# Config files
+COPY docker-entrypoint.sh /usr/local/bin/
+ENTRYPOINT ["docker-entrypoint.sh"]
+
+EXPOSE 9999
+CMD ["blazegraph"]
