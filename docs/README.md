@@ -1,13 +1,13 @@
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.1.5`, `2.1`, `2`, `latest` (*2.1.5/Dockerfile*)](https://github.com/docker-library/mysql/blob/e207dbbdfd5c95e4b51bdc2dae62c5f72a1dd908/8.0/Dockerfile)
--	[`2.1.4` (*2.1.4/Dockerfile*)](https://github.com/docker-library/mysql/blob/0590e4efd2b31ec794383f084d419dea9bc752c4/5.7/Dockerfile)
--	[`2.1.2` (*2.1.2/Dockerfile*)](https://github.com/docker-library/mysql/blob/7ee927986b8c0cbfa6cdbb073a0e662bdb62c18a/5.6/Dockerfile)
--	[`2.1.1` (*2.1.1/Dockerfile*)](https://github.com/docker-library/mysql/blob/08b08d88066bc27f82212631e1d3415b61097afe/5.5/Dockerfile)
--	[`2.1.0` (*2.1.0/Dockerfile*)](https://github.com/docker-library/mysql/blob/08b08d88066bc27f82212631e1d3415b61097afe/5.5/Dockerfile)
--	[`2.0.1` (*2.0.1/Dockerfile*)](https://github.com/docker-library/mysql/blob/08b08d88066bc27f82212631e1d3415b61097afe/5.5/Dockerfile)
--	[`2.0.0` (*2.0.0/Dockerfile*)](https://github.com/docker-library/mysql/blob/08b08d88066bc27f82212631e1d3415b61097afe/5.5/Dockerfile)
+-	[`2.1.5`, `2.1`, `2`, `latest` (*2.1.5/Dockerfile*)](https://github.com/nawerprod/docker-blazegraph/blob/master/2.1.5/Dockerfile)
+-	[`2.1.4` (*2.1.4/Dockerfile*)](https://github.com/nawerprod/docker-blazegraph/blob/master/2.1.4/Dockerfile)
+-	[`2.1.2` (*2.1.2/Dockerfile*)](https://github.com/nawerprod/docker-blazegraph/blob/master/2.1.2/Dockerfile)
+-	[`2.1.1` (*2.1.1/Dockerfile*)](https://github.com/nawerprod/docker-blazegraph/blob/master/2.1.1/Dockerfile)
+-	[`2.1.0` (*2.1.0/Dockerfile*)](https://github.com/nawerprod/docker-blazegraph/blob/master/2.1.0/Dockerfile)
+-	[`2.0.1` (*2.0.1/Dockerfile*)](https://github.com/nawerprod/docker-blazegraph/blob/master/2.0.1/Dockerfile)
+-	[`2.0.0` (*2.0.0/Dockerfile*)](https://github.com/nawerprod/docker-blazegraph/blob/master/2.0.0/Dockerfile)
 
 # What is Blazegraph?
 
@@ -15,7 +15,7 @@ Blazegraph is ultra-scalable, high-performance graph database with support for t
 
 For more information and related downloads for Blazegraph Server, please visit [www.blazegraph.com](http://www.blazegraph.com).
 
-![logo](https://raw.githubusercontent.com/docker-library/docs/c408469abbac35ad1e4a50a6618836420eb9502e/mysql/logo.png)
+![logo](https://github.com/nawerprod/docker-blazegraph/blob/master/docs/logo.png?raw=true)
 
 # How to use this image
 
@@ -39,7 +39,7 @@ $ docker run --name some-app --link some-blazegraph:blazegraph -d application-th
 
 ## ... via [`docker stack deploy`](https://docs.docker.com/engine/reference/commandline/stack_deploy/) or [`docker-compose`](https://github.com/docker/compose)
 
-Example `stack.yml` for `mysql`:
+Example `stack.yml` for `blazegraph`:
 
 ```yaml
 version: '3.1'
@@ -54,9 +54,9 @@ services:
 
 ```
 
-[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/96c08fac215f64844b9db61038a571b86534a12b/mysql/stack.yml)
+<!-- [![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/docker-library/docs/96c08fac215f64844b9db61038a571b86534a12b/mysql/stack.yml) -->
 
-Run `docker stack deploy -c stack.yml mysql` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:9999`, `http://localhost:9999`, or `http://host-ip:9999` (as appropriate).
+Run `docker stack deploy -c stack.yml blazegraph` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:9999`, `http://localhost:9999`, or `http://host-ip:9999` (as appropriate).
 
 ## Container shell access and viewing Blazegraph logs
 

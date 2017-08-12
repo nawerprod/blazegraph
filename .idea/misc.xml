@@ -69,9 +69,7 @@
       <textMaps />
     </LinkMapSettings>
   </component>
-  <component name="PhpDebugGeneral" xdebug_debug_port="9200" xdebug_force_break_when_no_path_mapping="false" xdebug_force_break_when_outside_project="false" />
   <component name="PhpProjectSharedConfiguration" php_language_level="7" />
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 7" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
       <profile-state>
