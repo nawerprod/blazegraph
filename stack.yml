@@ -1,0 +1,9 @@
+version: '3.1'
+
+services:
+
+    db:
+        image: nawer/blazegraph
+        environment:
+            JAVA_XMS: 512m
+            JAVA_XMX: 1g
