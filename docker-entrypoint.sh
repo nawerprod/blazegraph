@@ -40,8 +40,9 @@ if [ "$1" = 'blazegraph' ]; then
     echo
 
     for f in docker-entrypoint-initdb.d/*; do
-        _loadData "$f"
-        echo
+        if [ -e $f ];then
+            _loadData "$f"
+        fi
     done
 
     echo "${blazegraph[@]}"
