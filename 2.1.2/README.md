@@ -56,7 +56,7 @@ services:
 
 [![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/nawerprod/blazegraph/master/stack.yml)
 
-Run `docker stack deploy -c stack.yml blazegraph` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:9999`, `http://localhost:9999`, or `http://host-ip:9999` (as appropriate).
+Run `docker stack deploy -c stack.yml nawer/blazegraph` (or `docker-compose -f stack.yml up`), wait for it to initialize completely, and visit `http://swarm-ip:9999`, `http://localhost:9999`, or `http://host-ip:9999` (as appropriate).
 
 ## Container shell access and viewing Blazegraph logs
 
@@ -79,7 +79,7 @@ The Blazegraph startup configuration is specified in the file `/etc/blazegraph/o
 If `/my/custom/override.xml` is the path and name of your custom configuration file, you can start your `blazegraph` container like this :
 
 ```console
-$ docker run --name some-blazegraph -v /my/custom/override.xml:/etc/blazegraph/override.xml -d blazegraph:tag
+$ docker run --name some-blazegraph -v /my/custom/override.xml:/etc/blazegraph/override.xml -d nawer/blazegraph:tag
 ```
 
 ## Environment Variables
