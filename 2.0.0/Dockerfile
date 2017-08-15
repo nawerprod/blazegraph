@@ -7,6 +7,7 @@ RUN apk add --no-cache bash
 ADD https://sourceforge.net/projects/bigdata/files/bigdata/2.0.0/blazegraph.jar/download /usr/bin/blazegraph.jar
 
 RUN mkdir /docker-entrypoint-initdb.d
+RUN mkdir /var/lib/blazegraph
 
 # Config files
 COPY docker-entrypoint.sh /usr/local/bin/

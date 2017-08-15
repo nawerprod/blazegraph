@@ -46,5 +46,6 @@ if [ "$1" = 'blazegraph' ]; then
     done
 
     echo "${blazegraph[@]}"
+    cd /var/lib/blazegraph
     exec "${blazegraph[@]}"
 fi
