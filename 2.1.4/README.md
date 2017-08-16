@@ -82,6 +82,14 @@ If `/my/custom/override.xml` is the path and name of your custom configuration f
 $ docker run --name some-blazegraph -v /my/custom/override.xml:/etc/blazegraph/override.xml -d nawer/blazegraph:tag
 ```
 
+## Mount Blazegraph journal to a local drive
+
+Blazegraph journal can be map on a local volume using the following command :
+
+```console
+$ docker run --name some-blazegraph -v ./var/blazegraph:/var/lib/blazegraph -d nawer/blazegraph:tag
+```
+
 ## Environment Variables
 
 When you start the `blazegraph` image, you can adjust the configuration of the Blazegraph instance by passing one or more environment variables on the `docker run` command line. Do note that none of the variables below will have any effect if you start the container with a data directory that already contains a database: any pre-existing database will always be left untouched on container startup.
