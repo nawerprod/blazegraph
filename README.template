@@ -82,6 +82,7 @@ If `/my/custom/override.xml` is the path and name of your custom configuration f
 $ docker run --name some-blazegraph -v /my/custom/override.xml:/etc/blazegraph/override.xml -d nawer/blazegraph:tag
 ```
 
+
 ## Mount Blazegraph journal to a local drive
 
 Blazegraph journal can be map on a local volume using the following command :
@@ -89,6 +90,7 @@ Blazegraph journal can be map on a local volume using the following command :
 ```console
 $ docker run --name some-blazegraph -v ./var/blazegraph:/var/lib/blazegraph -d nawer/blazegraph:tag
 ```
+
 
 ## Environment Variables
 
