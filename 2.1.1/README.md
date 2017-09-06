@@ -110,6 +110,25 @@ When a container is started for the first time, a new `kb` namespace will be cre
 Furthermore, it will load RWStore.properties found in `/docker-entrypoint-initdb.d/someNamespace` to configure the namespace and import RDF files
 present in `/docker-entrypoint-initdb.d/someNamespace/data/`  . Files will be executed in alphabetical order.
 
+Example `stack.yml` for `blazegraph`:
+
+```yaml
+version: '3.1'
+
+services:
+
+    db:
+        image: nawer/blazegraph
+        environment:
+            JAVA_XMS: 512m
+            JAVA_XMX: 1g
+        volumes:
+            - /var/blazegraph:/var/lib/blazegraph
+            - ./docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
+        ports:
+            - "9999:9999"
+```
+
 # Credits for this readme
 
 A huge part of this readme is largely inspired by [mysql docker readme](https://hub.docker.com/_/mysql/)
