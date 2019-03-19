@@ -4,7 +4,7 @@ MAINTAINER Erwan Delahaye <erwan.delahaye@gmail.com>
 
 RUN apk add --no-cache bash
 # install blazegraph
-ADD https://sourceforge.net/projects/bigdata/files/bigdata/2.1.2/blazegraph.jar/download /usr/bin/blazegraph.jar
+ADD https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_RELEASE_2_1_2/blazegraph.jar /usr/bin/blazegraph.jar
 
 RUN mkdir /docker-entrypoint-initdb.d
 RUN mkdir /var/lib/blazegraph

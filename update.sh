@@ -13,13 +13,13 @@ declare -A jdkSuites=(
 )
 
 declare -A urlBlazeGraphSuites=(
-	[2.0.0]='https://sourceforge.net/projects/bigdata/files/bigdata/2.0.0/blazegraph.jar/download'
-	[2.0.1]='https://sourceforge.net/projects/bigdata/files/bigdata/2.0.1/blazegraph.jar/download'
+	[2.0.0]='https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_RELEASE_2_0_0/blazegraph.jar'
+	[2.0.1]='https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_RELEASE_2_0_1/blazegraph.jar'
 	[2.1.0]='https://sourceforge.net/projects/bigdata/files/bigdata/2.1.0/blazegraph.jar/download'
-	[2.1.1]='https://sourceforge.net/projects/bigdata/files/bigdata/2.1.1/blazegraph.jar/download'
-	[2.1.2]='https://sourceforge.net/projects/bigdata/files/bigdata/2.1.2/blazegraph.jar/download'
-	[2.1.4]='https://sourceforge.net/projects/bigdata/files/bigdata/2.1.4/blazegraph.jar/download'
-	[2.1.5]='https://sourceforge.net/projects/bigdata/files/bigdata/2.1.5/blazegraph.jar/download'
+	[2.1.1]='https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_RELEASE_2_1_1/blazegraph.jar'
+	[2.1.2]='https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_RELEASE_2_1_2/blazegraph.jar'
+	[2.1.4]='https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_RELEASE_2_1_4/blazegraph.jar'
+	[2.1.5]='https://github.com/blazegraph/database/releases/download/BLAZEGRAPH_RELEASE_2_1_5/blazegraph.jar'
 )
 
 versions=( "$@" )
