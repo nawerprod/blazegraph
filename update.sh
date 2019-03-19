@@ -37,7 +37,7 @@ for version in "${versions[@]}"; do
 
     # prepare Dockerfile
 	{ cat Dockerfile-alpine.template; } > "$version/Dockerfile"
-	{ cat README.template; } > "$version/README.md"
+	{ cat README.md; } > "$version/README.md"
 	if [ ! -e "$version/docker-entrypoint-initdb.d" ]; then
 	    mkdir -p "$version/docker-entrypoint-initdb.d/kb/data/"
 	fi
